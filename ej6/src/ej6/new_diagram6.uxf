@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>200</x>
+      <y>0</y>
+      <w>168</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;Item&gt;&gt;
+class: Abstract
+--
+-id: getId()
+_-ClassAttribute: Long_
+--
+#Operation(i: int): int
+/+AbstractOperation()/
+--
+Responsibilities
+-- Resp1
+*-- Resp2*</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>328</x>
+      <y>200</y>
+      <w>168</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>_Silla: Class_
+--
+lote: Long
+numLote: LOng
+conRuedas()
+--
+getId()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>40</x>
+      <y>208</y>
+      <w>168</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>_Pc: Class_
+--
+numSerie: Long
+esNotebook:Boolean
+--
+getId()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLInterface</id>
+    <coordinates>
+      <x>720</x>
+      <y>24</y>
+      <w>64</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>Interface
+--
+Operation1
+Operation2</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLInterface</id>
+    <coordinates>
+      <x>560</x>
+      <y>120</y>
+      <w>80</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>Ruedas
+--
+conRuedas()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>480</x>
+      <y>128</y>
+      <w>136</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;.</panel_attributes>
+    <additional_attributes>150.0;10.0;10.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>296</x>
+      <y>144</y>
+      <w>56</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;50.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>184</x>
+      <y>136</y>
+      <w>72</w>
+      <h>88</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>70.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+</diagram>
