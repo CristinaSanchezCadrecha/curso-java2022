@@ -41,11 +41,11 @@ class PersonasTest {
 		listaPersonas.add(new Persona(5, 1, "Maggie"));
 		
 		//Creamos nuevas personas
-		p1 = new Persona(6, 39, "Apu");
-		p1 = new Persona(7, 99, "Burns");
-		p1 = new Persona(8, 45, "Barney");
-		p1 = new Persona(9, 8, "Milhouse");
-		p1 = new Persona(10, 44, "Moe");
+		p1 = new Persona(1, 45, "Homer");
+		p2 = new Persona(2, 40, "Marge");
+		p3 = new Persona(3, 10, "Bart");
+		p4 = new Persona(4, 8, "Lisa");
+		p5 = new Persona(5, 1, "Maggie");
 	}
 	
 
@@ -66,6 +66,8 @@ class PersonasTest {
 		personasMap.put(p3.getIdentificador(), p3);
 		personasMap.put(p4.getIdentificador(), p4);
 		personasMap.put(p5.getIdentificador(), p5);
+		
+		assertEquals(personasMap, PersonaUtil.getPersonas(listaPersonas));
 		
 	}
 

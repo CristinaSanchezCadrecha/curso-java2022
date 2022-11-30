@@ -14,24 +14,18 @@ public class Persona {
 	private int edad;
 	private String nombre;
 	
-	
-
 	//Constructors
 	public Persona( int identificador, int edad, String nombre) {
 		this.identificador = identificador;
 		this.edad = edad;
 		this.nombre = nombre;
-		
 	}
 	
 	public Persona() {
 		super();
-	
 	}
-
-
-
-
+	
+	//GETTERS & SETTERS
 	public int getIdentificador() {
 		return identificador;
 	}
@@ -51,9 +45,35 @@ public class Persona {
 		this.nombre = nombre;
 	}
 
+//	@Override
+//	public int hashCode() {
+//		return Objects.hash(edad, identificador, nombre, persona1, persona2, persona3);
+//	}
+//
+//	@Override
+//	public boolean equals(Object obj) {
+//		if (this == obj)
+//			return true;
+//		if (obj == null)
+//			return false;
+//		if (getClass() != obj.getClass())
+//			return false;
+//		Persona other = (Persona) obj;
+//		return edad == other.edad && identificador == other.identificador && Objects.equals(nombre, other.nombre)
+//				&& Objects.equals(p1, other.persona1) && Objects.equals(persona2, other.persona2)
+//				&& Objects.equals(persona3, other.persona3);
+//	}
+
+	
+
 	@Override
 	public int hashCode() {
-		return Objects.hash(edad, identificador, nombre, persona1, persona2, persona3);
+		return Objects.hash(edad, identificador, nombre);
+	}
+
+	@Override
+	public String toString() {
+		return "Persona [identificador=" + identificador + ", edad=" + edad + ", nombre=" + nombre + "]";
 	}
 
 	@Override
@@ -65,15 +85,9 @@ public class Persona {
 		if (getClass() != obj.getClass())
 			return false;
 		Persona other = (Persona) obj;
-		return edad == other.edad && identificador == other.identificador && Objects.equals(nombre, other.nombre)
-				&& Objects.equals(persona1, other.persona1) && Objects.equals(persona2, other.persona2)
-				&& Objects.equals(persona3, other.persona3);
-	}
-
-	@Override
-	public String toString() {
-		return "Persona [identificador=" + identificador + ", edad=" + edad + ", nombre=" + nombre + ", persona1="
-				+ persona1 + ", persona2=" + persona2 + ", persona3=" + persona3 + "]";
+		return edad == other.edad &&
+				identificador == other.identificador &&
+				Objects.equals(nombre, other.nombre);
 	}
 	
 	
