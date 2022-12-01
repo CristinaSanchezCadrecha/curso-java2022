@@ -2,46 +2,39 @@ package ej4;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 
 public class MiPila {
+	
+	private List<String> pila = new ArrayList<String>();
 
-	public static void main(String[] args) {
-		push();
-		pop();
-		peek();
-		reverse();
-	}
 
-	static ArrayList<String> pila = new ArrayList<String>();
-
-	public static void pop() {
-		System.out.println("Pop:");
+	public String pop() {
 		String last =  pila.remove(pila.size() -1);
-		System.out.println(last);
+		return last;
 	}
 
-	public static void push() {
-		System.out.println("Push:");
-		pila.add("Uno");
-		pila.add("Dos");
-		pila.add("Tres");
-		pila.add("Cuatro");
-		System.out.println(pila);
+	public void push(String e) {
+		pila.add(e);
 	}
 
-	 static void peek() {
-		System.out.println("Peek:");
+	public String peek() {
 		String last1 =  pila.get(pila.size() -1);
-		System.out.println(last1);
+		return last1;
 	}
 	
-	 static void reverse() {
-		 System.out.println("Reverse:");
+	public void reverse() {
 		 for (int x = pila.size() -1; x >=0 ; x--) {
 				String number = pila.get(x);
 				System.out.println(number);
 		}
 
 	 }
+	
+	public List<String> getList(){
+		return pila;
+	}
+
+	
 	
 }
