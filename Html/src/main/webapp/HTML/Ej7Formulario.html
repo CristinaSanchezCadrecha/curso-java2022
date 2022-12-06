@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Formulario Avanzado</title>
+<link rel="stylesheet" type="text/css" href="css/style7.css"
+	media="screen" />
+</head>
+<body>
+	<h2>Rellena tu CV</h2>
+	<form action="" method="post" >
+		<fieldset id="cv">
+			<legend class="black" id="personales">Datos personales</legend>
+			<div class="container">
+				<label class="black" for="prov">Provincia</label><br> <select name="prov"
+					id="prov">
+					<option>Selecciona</option>
+					<option value="asturias">Asturias</option>
+					<option value="cantabria">Cantabria</option>
+					<option value="madrid">Madrid</option>
+				</select><br>
+			</div>
+
+			<div class="container">
+				<label class="black" for="fecha">Fecha de nacimiento</label><br>
+				 <input type="text" id="fecha" class="fecha"> de 
+				 <select name="mes" id="mes">
+					<option value="enero">Enero</option>
+					<option value="febrero">Febrero</option>
+					<option value="marzo">Marzo</option>
+					<option value="abril">Abril</option>
+					<option value="mayo">Mayo</option>
+					<option value="junio">Junio</option>
+					<option value="julio">Julio</option>
+					<option value="agosto">Agosto</option>
+					<option value="septiembre">Septiembre</option>
+					<option value="octubre">Octubre</option>
+					<option value="noviembre">Noviembre</option>
+					<option value="diciembre">Diciembre</option>
+				</select> 
+				de <input type="text" class="fecha">
+			</div>
+
+			<label class="black" for="temas">Temas de interés</label><br>
+			<div id="scroll">
+				 Administración de bases de datos<br>
+				 Arquitectura<br>
+				 Calidad<br>
+				 ERP, CRM, Business Intelligence<br>
+				 Arquitectura<br>
+				 Administración de bases de datos<br>
+				 ERP, CRM, Business Intelligence<br>
+				 Calidad
+			</div>
+			<a href="https://es.linkedin.com/">Accede a mi Linkedin</a>
+		</fieldset>
+	</form>
+
+	<h2>Información sobre el producto</h2>
+	<form action="" method="post">
+		<fieldset id="producto">
+			<legend class="black">Datos básicos</legend>
+
+			<label class="black" for="nombre2">Nombre</label><br>
+			<input type="text" id="nombre2"><br>
+			
+			<label class="black" for="descripcion">Descripción</label><br>
+			<textarea rows="5" cols="49" id="description"></textarea><br>
+			
+			<div class="foto">
+				<label class="black">Foto</label>
+	    		 <div class="file">
+	    			 <input id="vacio">
+		    		 <label for="archivo">Elegir...</label>
+		    		 <input  type="file" id="archivo"><br>
+	    		 </div>
+    		 </div>
+    		 
+    		  <div class="container">
+    		 	<input type="checkbox" id="check"> 
+    		 	<label for="check">Añadir contador de visitas</label>
+    		 </div>
+		</fieldset>
+		
+		<fieldset id="producto">
+			<legend class="black">Datos económicos</legend>
+
+			<label class="black" for="precio">Precio</label>
+			<input type="text" id="precio">€
+			
+			<label class="black" for="descripcion" id="impuestos">Impuestos</label>
+			<select>
+				<option value="4">4%</option>
+				<option value="7">7%</option>
+				<option value="16">16%</option>
+				<option value="25">25%</option>
+			</select>
+			
+    		<div id="radio">
+	    		 <label class="black">Promoción</label><br>
+	    		 <input type="radio" id="ninguno" name="promocion" value="ninguno">
+	    		 <label for="promocion">Ninguno</label><br>
+	    		 <input type="radio" id="transporte" name="promocion" value="transporte">
+	    		 <label for="promocion">Transporte gratuito</label><br>
+	    		 <input type="radio" id="descurnto" name="promocion" value="descuento">
+	    		 <label for="promocion">Descuento 5%</label>
+    		 </div>
+		</fieldset>
+	</form>
+</body>
+</html>

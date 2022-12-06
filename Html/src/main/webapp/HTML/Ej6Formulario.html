@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang ="es">
+	<head>
+		<meta charset="UTF-8 ">
+		<title>Formulario</title>
+		<link rel="stylesheet" type="text/css" href="css/style6.css" media="screen" />
+	</head>
+	<body>
+		<h1>Rellena tu CV</h1>
+		<form action="" method="post">
+		
+			 <label class="black" for="name">Nombre:</label><br>
+    		 <input type="text" id="name" name="user_name" maxlength="30"><br>
+    		 
+    		  <label class="black" for="last_name">Apellidos:</label><br>
+    		  <input type="text" id="last_name" name="last_name" maxlength="80"><br>
+			
+			 <label class="black" for="password">Contraseña:</label><br>
+    		 <input type="password" id="password" name="password" maxlength="10"><br>
+    		 
+    		 <label  class="black" for="dni">DNI:</label><br>
+    		 <input type="text" id="dni" name="dni" pattern="[0-9]{8}[A-Za-z]{1}"><br>
+    		 
+    		 <div id="radio">
+	    		 <label class="black">Sexo</label><br>
+	    		 <input type="radio" id="hombre" name="gender" value="hombre">
+	    		 <label for="gender">Hombre</label><br>
+	    		 <input type="radio" id="mujer" name="gender" value="mujer">
+	    		 <label for="gender">Mujer</label>
+    		 </div>
+    		 
+    		 <div class="foto">
+				<label class="black">Incluir mi foto</label>
+	    		 <div class="file">
+	    			 <input id="vacio">
+		    		 <label for="archivo">Elegir...</label>
+		    		 <input  type="file" id="archivo"><br>
+	    		 </div>
+    		 </div>
+    		  <div id="checkSuscribe">
+    		 	<input type="checkbox" id="check" value="checked"  checked> 
+    		 	<label for="check">Suscribirme al boletín de novedades</label>
+    		 </div>
+    		 
+    		 <button type="submit">Guardar cambios</button>
+    		 <button type="reset">Borrar los datos introducidos</button>
+
+		</form>
+	</body>
+</html>

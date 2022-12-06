@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Tablas</title>
+<style>
+	table,td,th{
+		border: 1px solid black;
+		border-collapse: collapse;
+		margin-bottom: 8%;
+	}
+	
+	#total{
+		text-align: center;
+	}
+	
+	#caption {
+		text-align: left;
+		margin-bottom: 5%;
+		font-size: 2em;
+	}
+	
+	
+</style>
+</head>
+<body>
+
+	<table id="table1">
+		<caption id="caption"><strong>Su pedido</strong></caption>
+		<tr>
+			<th><strong>Nombre producto</strong></th>
+			<th><strong>Precio unitario</strong></th>
+			<th><strong>Unidades</strong></th>
+			<th><strong>Subtotal</strong></th>
+		</tr>
+			<td>Reproductor MP3 (80 GB)</td>
+			<td>192.02</td>
+			<td>1</td>
+			<td>192.02</td>
+		<tr>
+		</tr>
+			<td>Fundas colores</td>
+			<td>2.50</td>
+			<td>5</td>
+			<td>12.50</td>
+		<tr>
+		</tr>
+			<td>Reproductor de radio & control remoto</td>
+			<td>12.99</td>
+			<td>1</td>
+			<td>12.99</td>
+		<tr>
+		</tr>
+			<td colspan= 1 id="total"><strong>TOTAL</strong></td>
+			<td>-</td>
+			<td>7</td>
+			<td>207.51</td>
+		<tr>
+	</table>
+	
+	<h1>Resultado de la búsqueda</h1>
+	<table>
+		<caption>Resultado de la búsqueda</caption>
+		<tr>
+			<th>Imagen</th>
+			<th>Datos</th>
+		</tr>
+		
+		<tr>
+			<td><img src="assets/portatil.png" alt="imagen portatil"></td>
+			<td><a href="#">Portátil - 3 GHz - 4GB RAM</a><br>
+			    <a href="#">Comprar: </a><del>2,990€</del> 2,599€
+			</td>
+		</tr>
+		<tr>
+			<td><img src="assets/videocamara.png" alt="imagen camara"></td>
+			<td><a href="#">Videocámara - Alta definición 1080p - 60 GB</a><br>
+				<a href="#">Comprar: </a><del>1,990€</del> 999€
+			</td>
+		</tr>
+		<tr>
+			<td><img src="assets/televisor.png" alt="imagen televisor"></td>
+			<td><a href="#">Televisor - 46 - Full HD</a><br>
+				<a href="#">Comprar: </a><del>1,990€</del> 1,799€
+			</td>
+		</tr>
+				<tr>
+			<td><img src="assets/movil.png" alt="imagen  movil"></td>
+			<td><a href="#">Móvil - 3G - Wi-Fi - 8GB</a><br>
+				<a href="#">Comprar: </a><del>399€</del> 349€
+			</td>
+		</tr>
+		
+	</table>
+
+</body>
+</html>
