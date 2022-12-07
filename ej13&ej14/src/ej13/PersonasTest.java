@@ -67,6 +67,8 @@ class PersonasTest {
 		personasMap.put(p4.getIdentificador(), p4);
 		personasMap.put(p5.getIdentificador(), p5);
 		
+		
+		//Comparo personasMap con listaPersonas
 		assertEquals(personasMap, PersonaUtil.getPersonas(listaPersonas));
 		
 	}
