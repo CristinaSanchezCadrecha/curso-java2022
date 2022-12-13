@@ -1,0 +1,138 @@
+body{
+	margin-top:5%;
+	margin-left:15%;
+}
+
+form{
+	width: 40%;
+	margin-bottom:9%;
+}
+
+fieldset{
+	margin-bottom: 3%;
+}
+
+label{
+	margin-bottom: 5px;
+}
+
+input{
+	margin-bottom: 5px;
+	border-radius: 3px;
+	border: 1px solid black;
+}
+
+select, textarea{
+	border-radius: 3px;
+	border: 1px solid black;
+}
+
+.black{
+	font-weight: bold;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+#cv{
+	box-shadow: 10px 10px lightblue;
+}
+
+#personales{
+	font-size: 1.5em;
+	font-family: fantasy;
+	color: #0080c0;
+}
+
+a{
+	text-decoration: none;
+	color:#0080c0;
+}
+
+/*a:visited {
+  color: green;
+  text-decoration: underline;
+}*/
+
+a:hover{
+	color: #8000ff;
+}
+
+a:active {
+  color: red;
+}
+
+
+.fecha{
+	width: 20px;
+}
+
+.container{
+	margin-top:2%;
+	margin-bottom: 4%;
+}
+
+#scroll{
+        border:1px solid;
+        height:100px;
+        width:300px;
+        overflow-y:scroll;
+        overflow-x:hidden;
+        margin-bottom: 3%;
+}
+    
+#description {
+	    border:1px solid;
+        overflow-y:scroll;
+        overflow-x:hidden;
+        margin-bottom: 3%;            
+}
+
+#archivo{
+	display: none;
+}
+
+.foto{
+	display: flex;
+}
+
+#vacio{
+	margin-top: 9px;
+	margin-left: 10px;
+	border-radius: 3px;
+	border: 1px solid black;
+}
+
+.file label{
+	display: inline-block;
+	padding: 2px;
+	border: 1px solid grey;
+	border-radius: 6px;
+	background-color: #eee;
+	cursor:pointer;
+	width: 4em;
+	text-align: center;
+}
+
+
+#producto{
+	background-color:rgb(204, 236, 247) ;
+	box-shadow: 3px 3px #49758b;
+}
+
+#precio{
+	width: 8%;
+	margin-right: 4px;
+}
+
+#impuestos{
+	margin-left: 5%;
+}
+
+#radio{
+	margin-top: 15px;
+}
+
+
+
+
+

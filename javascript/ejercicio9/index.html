@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Formulario Avanzado</title>
+<link rel="stylesheet" type="text/css" href="css/styles.css"
+	media="screen" />
+<script src="main.js"></script>
+</head>
+<body>
+	<h2>Rellena tu CV</h2>
+	<form action="" method="post" name="formularioCv" onsubmit="return validateForm()" >
+		<fieldset id="cv">
+			<legend class="black" id="personales">Datos personales</legend>
+			<div class="container">
+				<label class="black" for="prov">Provincia</label><br> 
+                <select name="prov" id="prov">
+					<option value="0">Selecciona</option>
+					<option value="asturias">Asturias</option>
+					<option value="cantabria">Cantabria</option>
+					<option value="madrid">Madrid</option>
+				</select><br>
+			</div>
+
+			<div class="container">
+				<label class="black" for="fecha">Fecha de nacimiento</label><br>
+				 <input name="dia" type="text" id="fecha" class="fecha"> de 
+				 <select name="mes" id="mes">
+					<option value="enero">Enero</option>
+					<option value="febrero">Febrero</option>
+					<option value="marzo">Marzo</option>
+					<option value="abril">Abril</option>
+					<option value="mayo">Mayo</option>
+					<option value="junio">Junio</option>
+					<option value="julio">Julio</option>
+					<option value="agosto">Agosto</option>
+					<option value="septiembre">Septiembre</option>
+					<option value="octubre">Octubre</option>
+					<option value="noviembre">Noviembre</option>
+					<option value="diciembre">Diciembre</option>
+				</select> 
+				de <input name="anio" type="text" class="fecha">
+			</div>
+
+			<label class="black" for="temas">Temas de interés</label><br>
+			<div id="scroll">
+				 Administración de bases de datos<br>
+				 Arquitectura<br>
+				 Calidad<br>
+				 ERP, CRM, Business Intelligence<br>
+				 Arquitectura<br>
+				 Administración de bases de datos<br>
+				 ERP, CRM, Business Intelligence<br>
+				 Calidad
+			</div>
+			<a href="https://es.linkedin.com/">Accede a mi Linkedin</a>
+            <button type="submit">Enviar</button>
+		</fieldset>
+	</form>
+</body>
+</html>

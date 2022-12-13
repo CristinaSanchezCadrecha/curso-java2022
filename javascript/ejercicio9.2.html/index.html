@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/styles.css"
+	media="screen" />
+    <title>Formulario Producto</title>
+    
+</head>
+<body>
+    <h2>Información sobre el producto</h2>
+	<form action="" method="post" name="formularioInfo" id="formInfo" onSubmit="return clean()">
+		<fieldset id="producto">
+			<legend class="black">Datos básicos</legend>
+
+			<label class="black" for="nombre2">Nombre</label><br>
+			<input type="text" id="nombre2" name="nombre2"><br>
+			
+			<label class="black" for="descripcion">Descripción</label><br>
+			<textarea rows="5" cols="49" id="description"></textarea><br>
+			
+			<div class="foto">
+				<label class="black">Foto</label>
+	    		 <div class="file">
+	    			 <input id="vacio">
+		    		 <label for="archivo">Elegir...</label>
+		    		 <input  type="file" id="archivo"><br>
+	    		 </div>
+    		 </div>
+    		 
+    		  <div class="container">
+    		 	<input type="checkbox" id="check"> 
+    		 	<label for="check">Añadir contador de visitas</label>
+    		 </div>
+		</fieldset>
+		
+		<fieldset id="producto">
+			<legend class="black">Datos económicos</legend>
+
+			<label class="black" for="precio">Precio</label>
+			<input type="text" id="precio">€
+			
+			<label class="black" for="descripcion" >Impuestos</label>
+			<select id="impuestos">
+				<option value="1">4%</option>
+				<option value="2">7%</option>
+				<option value="3">16%</option>
+				<option value="4">25%</option>
+			</select>
+			
+    		<div id="radio">
+	    		 <label class="black">Promoción</label><br>
+	    		 <input type="radio" id="ninguno" name="promocion" value="ninguno">
+	    		 <label for="promocion">Ninguno</label><br>
+	    		 <input type="radio" id="transporte" name="promocion" value="transporte">
+	    		 <label for="promocion">Transporte gratuito</label><br>
+	    		 <input type="radio" id="descuento" name="promocion" value="descuento">
+	    		 <label for="promocion">Descuento 5%</label>
+    		 </div>
+			 <button type="submit">Enviar</button>
+		</fieldset>
+	</form>
+    <script src="main.js"></script>
+</body>
+</html>
